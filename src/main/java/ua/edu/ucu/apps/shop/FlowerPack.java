@@ -32,8 +32,12 @@ public class FlowerPack {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {return true;}
-        if (!(o instanceof FlowerPack pack)) {return false;}
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof FlowerPack pack)) {
+            return false;
+        }
         return amount == pack.amount && Objects.equals(flower, pack.flower);
     }
 

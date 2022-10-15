@@ -29,8 +29,12 @@ public class FlowerBucket {
 
     @Override
     public boolean equals(final Object o) {
-        if (this == o) {return true;}
-        if (!(o instanceof FlowerBucket that)) {return false;}
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof FlowerBucket that)) {
+            return false;
+        }
         for (FlowerPack pack : bucket) {
             if (!that.inBucket(pack)) {
                 return false;

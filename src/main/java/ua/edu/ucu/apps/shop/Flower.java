@@ -19,10 +19,14 @@ public class Flower {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Flower flower)) {return false;}
-        return Double.compare(flower.sepalLength, sepalLength) == 0 &&
-                Double.compare(flower.price, price) == 0 && color == flower.color;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Flower flower)) {
+            return false;
+        }
+        return Double.compare(flower.sepalLength, sepalLength) == 0
+                && Double.compare(flower.price, price) == 0 && color == flower.color;
     }
 
     @Override
