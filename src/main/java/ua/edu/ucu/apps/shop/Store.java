@@ -11,10 +11,15 @@ public class Store {
 
 
 
-    public boolean search(final FlowerBucket searchedBucket){
-        return searchedBucket == assortement.get(0);
+    public boolean search(final FlowerBucket searchedBucket) {
+        for (FlowerBucket storeBucket: assortement) {
+            if (storeBucket.equals(searchedBucket)) {
+                return true;
+            }
+        }
+        return false;
     }
-    public void addBucket(FlowerBucket newBucket){
+    public void addBucket(final FlowerBucket newBucket){
         assortement.add(newBucket);
     }
 

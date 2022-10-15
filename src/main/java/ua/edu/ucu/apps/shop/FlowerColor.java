@@ -6,7 +6,8 @@ public enum FlowerColor {
     WHITE("#FFFFFF"),
     BLUE("#0000FF");
     private final String hexcolor;
-    FlowerColor(String hexcolor){
+
+    FlowerColor(final String hexcolor) {
         this.hexcolor = hexcolor;
     }
 
