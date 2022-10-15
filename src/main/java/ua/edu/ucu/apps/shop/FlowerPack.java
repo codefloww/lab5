@@ -18,16 +18,16 @@ public class FlowerPack {
         return amount;
     }
 
-    public void setAmount(final int amount) {
-        this.amount = amount;
+    public void setAmount(final int newAmount) {
+        this.amount = newAmount;
     }
 
     public Flower getFlower() {
         return flower;
     }
 
-    public void setFlower(final Flower flower) {
-        this.flower = flower;
+    public void setFlower(final Flower newFlower) {
+        this.flower = newFlower;
     }
 
     @Override
