@@ -11,10 +11,10 @@ public class Flower {
     public Flower() {
     }
 
-    public Flower(final double sepalLength, final FlowerColor color, final double price) {
-        this.sepalLength = sepalLength;
-        this.color = color;
-        this.price = price;
+    public Flower(final double newSepalLength, final FlowerColor newColor, final double newPrice) {
+        this.sepalLength = newSepalLength;
+        this.color = newColor;
+        this.price = newPrice;
     }
 
     @Override

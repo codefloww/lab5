@@ -9,9 +9,9 @@ public class FlowerPack {
     public FlowerPack() {
     }
 
-    public FlowerPack(final Flower flower, final int amount) {
-        this.flower = flower;
-        this.amount = amount;
+    public FlowerPack(final Flower newFlower, final int newAmount) {
+        this.flower = newFlower;
+        this.amount = newAmount;
     }
 
     public int getAmount() {
